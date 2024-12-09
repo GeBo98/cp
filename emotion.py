@@ -25,7 +25,7 @@ while True:
         face_roi = rgb_frame[y:y + h, x:x + w]
 
         
-        # Perform emotion analysis on the face ROI
+        # Perform emotion analysis on the face ROIvsdf
         result = DeepFace.analyze(face_roi, actions=['emotion'], enforce_detection=False)
 
         # Determine the dominant emotion
